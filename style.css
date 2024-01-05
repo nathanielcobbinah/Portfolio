@@ -23,11 +23,12 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 40px;
-    padding: 15px 10px;
+    padding: 20px;
+    height: 60px;
     background: linear-gradient(to right, black, darkblue);
     border-bottom: 1px solid darkblue;
 }
+
 header nav ul{
     display: flex;
     flex-direction: row;
@@ -82,8 +83,8 @@ header .menu-bar .bx-menu {
     justify-content: center;
 }
 .about-me .about-content .about-image img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
 }
 .about-me .about-content .about-text .buttons {
     display: flex;
@@ -91,14 +92,14 @@ header .menu-bar .bx-menu {
     gap: 10px;
     margin-top: 30px;
 }
-.about-me .about-content .about-text .buttons {
+.about-me .about-content .about-text .buts {
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin-top: 30px;
 }
 .about-me .about-content .about-text .buttons button {
-    padding: 10px 15px;
+    padding: 12px 15px;
     color: #fff;
     font-weight: bold;
     border-radius: 40px;
@@ -150,3 +151,121 @@ header .menu-bar .bx-menu {
     background-color: blue;
     color: white;
 }
+
+.projects {
+    margin: 20px;
+    margin-top: 70px;
+}
+.projects h2 {
+    text-align: center;
+    padding: 20px;
+}
+.projects .all-projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.projects .all-projects .single-projects {
+    width: 32%;
+    height: auto;
+    /* box-shadow: 2px 2px 3px darkblue; */
+    margin-bottom: 10px;
+    position: relative;
+}
+.projects .all-projects .single-projects .project-img img{
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 350px;
+}.projects .all-projects .single-projects .project-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 75, 0.8);
+    transition: top 1s ease; /* Added transition for top property */
+    opacity: 0;
+    border-radius: 20px;
+    
+    /* display: none; */
+}
+
+.projects .all-projects .single-projects .project-text .project-details {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.projects .all-projects .single-projects .project-text h3 {
+    margin-top: -20px;
+}
+
+.projects .all-projects .single-projects .project-text .project-details a {
+    color: orangered;
+    font-weight: bold;
+}
+
+.projects .all-projects .single-projects:hover .project-text {
+    display: flex;
+    opacity: 1;
+    transition: top .5s ease, opacity .5s ease; /* Adjust the transition for smooth movement and opacity */
+    border: 1px solid darkblue;
+}
+
+
+
+.services {
+    margin: 20px;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+.services h2 {
+    text-align: center;
+    padding: 20px;
+}
+.services .all-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 15px;
+}
+.services .all-services .single-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+    background: linear-gradient(to right, black, darkblue);
+    padding: 10px;
+    border-radius: 20px;
+}
+.services .all-services .single-service:hover {
+    transition: 1s;
+    background: linear-gradient(black, darkblue);
+}
+.services .all-services .single-service .service-icon {
+    margin-bottom: 10px;
+}
+.services .all-services .single-service .service-icon i {
+    font-size: 70px;
+    color: blue;
+}
+.services .all-services .single-service .service-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+
